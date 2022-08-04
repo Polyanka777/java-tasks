@@ -1,0 +1,1428 @@
+//На одной строчке через пробел записаны два целых числа: длина и ширина прямоугольника.
+ Вычислите его площадь и периметр (именно в таком порядке). Результат выведите на разных строках.
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+
+       //1 решение
+       int a = 10; int b = 2;
+       int s = a*b;
+       int p = (a+b)*2;
+       System.out.println("length = " + a +" width = " + b + ";");
+       System.out.print("square = " + s +";\n perimeter = " + p + ";\n");
+
+       // 2 решение
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+     
+       int a = 10, b = 2, s, p;
+       System.out.println("length = " + a +" width = " + b + ";");
+       System.out.printf("s = %d; \n p = %d.",a*b, 2*(a+b));
+     
+        
+
+     }
+}
+
+//Создайте две переменные: целого типа a и действительного b, равные 5 и 0.4 соответственно.
+ Выведите построчно на экран их сумму, разность, произведение и частное.
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+     //1 решение   
+       int a = 5;
+       double b = 0.4;
+       System.out.println("a+b = " + (a+b));
+       System.out.println("a-b = " + (a-b)); 
+       System.out.println("a*b = " + a*b);
+       System.out.println("a/b = " + a/b);
+     // 2 решение
+        int a = 5;
+       double b = 0.4;
+       System.out.printf("a+b = %.1f; \n a-b = %.1f; \n a*b = %.1f; \n a/b = %.1f", a+b, a-b, a*b, a/b);
+
+     }
+}
+
+//Найти длину окружности радиуса 4
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    double a = 10;
+    double b = 2;
+    double c = 7;
+    double d = 4;
+    double result = (a*(b+c*Math.sqrt(d)));
+    System.out.println(result);
+     }
+}
+
+//Известно значение температуры по шкале Цельсия 36,6. Найти соответствующее значение
+температуры по шкале:
+1 Фаренгейта;
+2 Кельвина.
+Для пересчета по шкале Фаренгейта необходимо исходное значение температуры умножить
+на 1,8 и к результату прибавить 32, а по шкале Кельвина абсолютное значение нуля
+соответствует 273,15 градуса по шкале Цельсия.
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    double t = 36.6;
+    System.out.printf("Fahrenheit = %.2f; \n Kelvin = %.2f",t*1.8+32, t+273.15);
+     }
+}
+
+//Дано трехзначное число. Найти:
+1 число единиц в нем;
+2 число десятков в нем;
+3 сумму его цифр;
+4 произведение его цифр.
+
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+        int number = 213;
+        int s = number/100;
+        int d = number%100/10;
+        int e = number%10;
+        System.out.printf("%d = %d*100+%d*10+%d;\n", number,s,d,e);
+        System.out.printf("2+1+3 = %d; \n 2*1*3 = %d",s*d*e, s+d+e);
+
+
+     }
+}
+
+//Дано натуральное число. Определить:
+1 является ли оно четным;
+2 оканчивается ли оно цифрой 7
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+        int number = 142342;
+        boolean b1 = (number%2==0);
+        boolean b2 = (number%10==7);
+        System.out.println("Number " + number + " is even? " + b1);
+        System.out.println("Number " + number + " is ended by 7? " + b2);
+
+
+     }
+}
+
+//Известны площади круга и квадрата. Определить:
+1 уместится ли круг в квадрате?
+2 уместится ли квадрат в круге?
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    int skr = 10;
+    int skv = 20;
+    double pi = Math.PI;
+    double R = Math.sqrt (skr/pi);
+    double sqrt2 = Math.sqrt (skv);
+    double a = sqrt2;
+    double sqrt3 = Math.sqrt (2);
+    boolean b1 = (R<=a/2);
+    boolean b2 = (a<=R*2/sqrt3);
+    System.out.println("The circle will fit in a square " + b1);
+    System.out.println("The square will fit in the circle " + b2);
+
+
+     }
+}
+
+//Составить программу, которая уменьшает первое введенное число в два раза, если оно
+больше второго введенного числа по абсолютной величине.
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    int a = 30;
+    int b = 20;
+    if (Math.abs(a)>Math.abs(b))
+    {
+    a = a/2;
+    }
+    System.out.println(a);
+     }
+}
+
+//Известен вес боксера-любителя. Известно, что вес таков, что боксер может быть отнесен к
+одной из трех весовых категорий:
+1 легкий вес — до 60 кг;
+2 средний вес — до 75 кг;
+3 тяжелый вес — до 91 кг;
+4 супертяжелый вес – с 91 кг.
+Определить, в какой категории будет выступать данный боксер.
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    int W = 65;
+    if (W<75)
+      {
+      if (W<60)
+       {System.out.println("Light");
+       }
+      else 
+         {System.out.println("Medium");
+         }
+      }
+    else 
+     {
+         if (W<91)
+         {System.out.println("Heavy");
+             
+         }
+         else
+         {
+             System.out.println("Super heavy");
+         }
+     
+         
+      }
+     
+     
+    }
+}
+
+//
+Составить программу, которая в зависимости от порядкового номера дня недели (1, 2, ..., 7)
+выводит на экран его название (понедельник, вторник, ..., воскресенье).
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    int day = 2;
+    switch (day)
+      {
+         case 1:
+          System.out.println("Monday");
+         break;
+         case 2:
+          System.out.println("Tuesday");
+         break;
+         case 3:
+          System.out.println("Wednesday");
+          break;
+         case 4:
+          System.out.println("Thursday");
+          break;
+         case 5:
+          System.out.println("Friday");
+          break;
+         case 6:
+          System.out.println("Saturday");
+          break;
+         case 7:
+          System.out.println("Sunday");
+          break;
+         default:
+          System.out.println("Incorrect day");
+          break;
+         
+       }
+         
+    }
+}
+
+//В чемпионате по футболу команде за выигрыш дается 3 очка, за проигрыш — 0, за ничью — 1
+Известно количество очков, полученных командой за игру. Определить словесный результат
+игры (выигрыш, проигрыш или ничья).
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    int a = 10;
+        
+        switch(a)
+        {
+            case 0:
+                System.out.println("loss");
+                break;
+            case 1:
+                System.out.println("draw");
+                break;
+            case 3:
+                System.out.println("win");
+                break;
+            default:
+                System.out.println("Incorrect");
+                break;
+        }
+    }
+}
+
+//Даны радиус круга и сторона квадрата. У какой фигуры площадь больше?
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    int r = 20;
+    int a = 10;
+    double pi = Math.PI;
+    double pow1 = Math.pow(r,2);
+    double skr = pi*pow1;
+    double pow2 = Math.pow(a,2);
+    double skv = pow2;
+    if (skr>skv)
+    {
+        System.out.println("The area of a circle is larger than the area of a square");
+    }
+        else
+        {
+            System.out.println("The area of a square is larger than the area of a circle");
+        }
+    }
+}
+
+//Дано двузначное число. Определить, является ли сумма его цифр двузначным числом
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    int number = 63;
+    int d = number/10;
+    int e = number%10;
+    int summa = d+e;
+    boolean b = (summa>=10);
+    System.out.println("Summa " + summa + " is two-digit " + b);
+    
+    }
+}
+
+//Даны три целых трехзначных числа а, b и с. Определить, какая из сумм цифр этих чисел наибольшая.
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    int a = 113;
+    int b = 111;
+    int c = 131;
+    int sa = a/100+a%100/10+a%10;
+    int sb = b/100+b%100/10+b%10;
+    int sc = b/100+b%100/10+b%10;
+    if (sa>sb&&sa>sc)
+    {
+            System.out.println("The sum of the digits of " + a + " is the biggest");
+    }
+        else 
+        {
+            if (sb>sa&&sb>sc)
+            {
+               System.out.println("The sum of the digits of " + b + " is the biggest"); 
+            }
+            
+    
+         else
+         {
+             if (sc>sa&&sc>sb)
+             {
+
+                 System.out.println("The sum of the digits of " + c + " is the biggest");
+             }
+         }
+        }
+        
+        }
+        
+     }
+     
+//Даны два числа. Если квадратный корень из второго числа меньше первого числа, то увеличить
+второе число в пять раз.
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    int a = 2;
+    int b = 5;
+    double sqrt = Math.sqrt(b);
+    if (sqrt<a)
+    {
+        b = b*5;
+    }
+        System.out.println(b);
+        }
+        
+     }
+
+//Напечатать ряд чисел 20 в виде:
+20 20 20 20 20 20 20 20 20 20
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    for (int i = 0; i<10; i++)
+    {
+        System.out.print("20 ");
+    }
+    }
+}
+
+//Напечатать числа с 20 до 0 в порядке убывания.
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    for (int i = 20; i>=0; i--)
+    {
+        System.out.println(i + " ");
+    }
+    }
+}
+     
+//Напечатать числа следующим образом:
+10 10.4
+11 11.4
+...
+25 25.4
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    for (int i = 10; i<=25; i++)
+    {
+        System.out.printf("%d %d.4\n",i,i);
+    }
+    }
+}
+
+//Напечатать таблицу умножения на 7:
+1*7=7
+2*7=14
+...
+9*7=63
+
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+    for (int i = 1; i<=9; i++)
+    {
+        System.out.printf("%d*7=%d\n",i,i*7);
+       
+    }
+    }
+}
+
+//Напечатать сумму всех целых чисел от 100 до 500
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+        int sum = 0;
+    for (int i = 100; i<=500; i++)
+    {
+        sum = sum + i;
+    }  
+        System.out.println("Answer is " + sum);
+        
+    
+    }
+}
+//Напечатать сумму всех целых чисел от a до b (значения вводятся с клавиатуры, b>=a)
+import java.util.Scanner;
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        
+        Scanner sc = new Scanner (System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int sum = 0;
+    for (int i = a; i<=b; i++)
+    {
+       sum = sum+i;
+    }
+       System.out.println(sum);
+      
+    }
+}
+     
+//Дано натуральное число n и ряд вещественных чисел a1, a2...an.
+Определить среднее арифметическое вещественных чисел.
+import java.util.Scanner;
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println("Hello World");
+        int n = 9;
+        Scanner sc = new Scanner (System.in);
+        double sum = 0;
+    for (int i = 0; i<9; i++)
+    {
+      double temp = sc.nextDouble();
+       sum = sum+temp;
+    }
+       System.out.println("Answer is " + sum/n);
+      
+    }
+}
+     
+//Последовательность Фибоначчи 1 1 2 3 5 8 13 21 34... Дано натуральное число n.
+1) найти k-й член последовательности Фибоначчи
+2) найти первые n членов последовательности
+3) верно ли, что сумма первых членов является четным числом?
+
+public class HelloWorld{ 
+ 
+     public static void main(String []args){ 
+        int k = 3;
+        int n = 10;
+        int f1 = 1; 
+        int f2 = 1; 
+        
+        System.out.print("Fibonacci row of " + n + " first numbers is "+ f1 + " " + f2 + " "); 
+         int sum = 0;
+        for (int i = 3; i<=n; i++) 
+            { 
+                int fn=f1+f2; 
+                
+                    System.out.print(fn + " ");
+                
+                f1=f2; 
+                f2=fn; 
+                sum = sum + f2;
+            }
+                System.out.println("where the " + k + " number is the answer");
+                System.out.println("The sum of the 1st " + n + " numbers in Fibonacci row is "+ sum); 
+        if (sum%2==0) 
+        {
+            System.out.println("The sum is even number");
+        }
+         else 
+        System.out.println("The sum is odd number"); 
+         
+     } 
+}
+
+
+//Дана непустая последовательность целых чисел, оканчивающаяся нулем. Найти:
+1 сумму всех чисел последовательности;
+2 количество всех чисел последовательности
+3 среднее арифметическое
+
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        int value = sc.nextInt();
+        int counter = 0;
+        while(value!=0)
+        {
+          sum = sum + value;
+          counter ++;
+          {
+          System.out.print(value + " ");
+          
+          value = sc.nextInt();
+          }
+        }
+       System.out.println();
+       System.out.println("Summa = " + sum);
+       System.out.println("Counter = " + counter);
+       double avg = sum/counter;
+       System.out.println("Average = " + avg);
+    }
+}
+//Дано натуральное число. Определить:
+1 количество цифр 3 в нем;
+2 сколько раз в нем встречается последняя цифра;
+3 количество четных цифр в нем;
+4 сумму его цифр, больших пяти;
+5 произведение его цифр, больших семи;
+6 сколько раз в нем встречаются цифры 0 и 5 (всего).
+1) public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        
+        int num = 125361315;
+        int temp = num%10;
+        int counter= 0;
+        while(num>0)
+        {
+          if(temp==3)
+          {
+            counter++;
+          }
+          num=num/10;
+          temp=num%10;
+        }
+        System.out.println("Цифра 3 встречается " + counter + " раз(а)");
+2) 
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        
+        int num = 125361315;
+        int temp = num%10;
+        int temp1 = temp;
+        int counter= 0;
+        while(num>0)
+        {
+          if(temp1==temp)
+          {
+            counter++;
+          }
+          num=num/10;
+          temp=num%10;
+        }
+        System.out.println("Цифра " + temp1 + " встречается " + counter + " раз(а)");
+3) 
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        
+        int num = 125361315;
+        int temp = num%10;
+        int counter= 0;
+        while(num>0)
+        {
+          if(num%2==0)
+          {
+            counter ++;
+          }
+          num=num/10;
+          temp=num%10;
+        }
+        System.out.println ("Количество четных цифр составляет " + counter + "раз(а)");
+4) public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        
+        int num = 125361315;
+        int temp = num%10;
+        int counter= 0;
+        int sum = 0;
+        while(num>0)
+        {
+          if(temp>5)
+          {
+            sum=sum+temp;
+          }
+          num=num/10;
+          temp=num%10;
+          
+        }
+        System.out.println ("Сумма цифр, превышающих 5 = " + sum);
+5) public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        
+        int num = 1253;
+        int temp = num%10;
+        int counter= 0;
+        int mult = 1;;
+        while(num>0)
+        {
+          if(temp>7)
+          {
+            mult= mult*temp;
+          }
+          num=num/10;
+          temp=num%10;
+         
+        }
+        System.out.println ("Произведение цифр, превышающих 7 = " + mult);
+6)
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        
+        int num = 1253670852;
+        int temp = num%10;
+        int counter= 0;
+        while(num>0)
+        {
+          if(temp==0||temp==5)
+          {
+            counter++;
+          }
+          num=num/10;
+          temp=num%10;
+         
+        }
+        System.out.println ("Counter = " + counter);
+//Имеется фрагмент программы в виде оператора цикла с параметром, обеспечивающий
+вывод на экран "столбиком" всех целых чисел от 10 до 30 Оформить этот фрагмент в виде:
+1 оператора цикла с предусловием;
+2 оператора цикла с постусловием.
+
+public class Main {
+    public static void main(String[] args) {
+       int i=10;
+       while(i<30)
+       {
+         System.out.println(i+ " ");
+         i++;
+       }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+      for (int i=10; i<30; i++)
+      System.out.println(i + " ");
+    }
+}
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        
+        int i = 10;
+        do
+        {
+          System.out.println(i + " ");
+          i++;
+        }
+     while (i<30);
+//Дано натуральное число.
+1 Определить его максимальную цифру
+2 Определить его минимальную цифру
+public class Main {
+    public static void main(String[] args) {
+        int n = 226255698;
+        int max=0;
+        int min=9;
+        while(n>0)
+        {
+          if(max<n%10)
+          max=n%10;
+          if(min>n%10)
+          min=n%10;
+          n=n/10;
+        }
+        System.out.println("Max = " + max);
+        System.out.println("Min = " + min);
+    }
+}
+//Найти максимальное из натуральных чисел, не превышающих 5000, которое нацело делится
+на 39
+public class Main {
+    public static void main(String[] args) {
+        for(int i=5000; i>1;i--)
+        if(i%39==0)
+        {
+          System.out.println(i);
+          break;
+        }
+    }
+}
+//Гражданин 1 марта открыл счет в банке, вложив 1000 руб. Через каждый месяц размер
+вклада увеличивается на 2% от имеющейся суммы. Определить:
+1 за какой месяц величина ежемесячного увеличения вклада превысит 30 руб.;
+2 через сколько месяцев размер вклада превысит 1200 руб.
+
+public class Main {
+    public static void main(String[] args) {
+        double v=1000;
+        double sum=0;
+        double counter=0;
+        double counterp=0;
+        while(sum<30)
+        {
+          sum=v*0.02;
+          v=sum+v;
+          if(sum<30)
+          {
+            counter++;
+          }
+        if(v<1200)
+          {
+            counterp++;
+          }
+        }  
+       System.out.println("В " + counter + "месяце сумма процентов по вкладу будет больше 30 руб.");
+       System.out.println("Через " + counterp + "месяцев сумма вклада превысит 1200 руб.");
+    }
+}
+//Составить программу вывода любого числа любое заданное число раз.
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int i=0;
+       int value=sc.nextInt();
+       for(i=0; i<10; i++)
+       {
+         System.out.println(value + " ");
+       }
+    }
+}
+//Напечатать числа следующим образом:
+25 25.5 24.8
+26 26.5 25.8
+…
+35 35.5 34.8
+public class HelloWorld {
+    public static void main(String[] args) {
+       for(int i=25; i<=35; i++)
+       {
+         System.out.printf("%d %d.5 %d.8\n",i,i,(i-1));
+         
+       }
+    }
+}
+//Напечатать таблицу соответствия между весом в фунтах и весом в килограммах для
+значений 1, 2, ..., 10 фунтов (1 фунт = 453 г).
+public class HelloWorld {
+    public static void main(String[] args) {
+        
+        System.out.println("Hello World!");
+        for(double i=1; i<=10; i++)
+        {
+          System.out.printf("%.0f %.3f\n", i, i*0.453);
+        }
+        
+    }
+}
+//Вычислить сумму 1+1/2+1/3+...+1/n.
+public class HelloWorld {
+    public static void main(String[] args) {
+        
+        System.out.println("Hello World!");
+        int n=6;
+        double sum = 0;
+        for(double i=1; i<=n; i++)
+        {
+          sum=1/i + sum;}
+          System.out.println(sum);
+       
+    }
+}
+//Массивы
+ЗАдача1
+Заполнить массив из десяти элементов значениями, вводимыми с клавиатуры в ходе
+выполнения программы.
+import java.util.Scanner;
+public class HelloWorld {
+    public static void printArray(int[] array){
+      for(int i = 0; i < array.length; i++)
+        {
+          System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+    public static int[] scanArray(int n)
+    
+    {
+      int[] array = new int[n];
+       Scanner sc = new Scanner(System.in);
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=sc.nextInt();
+        }
+        return array;
+    }
+    public static void main(String[] args) {
+        int[] array1 = scanArray(10);
+        printArray(array1);
+    }
+}
+// Task 2
+Используя датчик случайных чисел, заполнить массив из двадцати элементов
+неповторяющимися числами. Вывести полученные массивы на экран.
+import java.util.Scanner;
+import java.util.Random;
+
+public class HelloWorld {
+    public static void printArray(int[] array){
+      for(int i = 0; i < array.length; i++)
+        {
+          System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+    public static int[] scanArray(int n)
+    {
+      int[] array = new int[n];
+       Scanner sc = new Scanner(System.in);
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=sc.nextInt();
+        }
+        return array;
+    }
+    public static int[] generateArray(int n)
+    {
+      int[] array = new int[n];
+       Random r = new Random();
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=r.nextInt(30);
+        }
+        return array;
+    }
+    
+    public static void main(String[] args) {
+        int[] array1 = generateArray(10);
+        printArray(array1);
+    }
+}
+// Task 3
+Дан массив. Составить программу:
+1 расчета квадратного корня из любого элемента массива;
+2 расчета среднего арифметического двух любых элементов массива
+Предусмотреть возможность ошибочных обращений вне границ массива.
+import java.util.Scanner;
+import java.util.Random;
+
+public class HelloWorld {
+    public static void printArray(double[] array){
+      for(int i = 0; i < array.length; i++)
+        {
+          System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+    public static double[] scanArray(int n)
+    {
+      double[] array = new double[n];
+       Scanner sc = new Scanner(System.in);
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=sc.nextInt();
+        }
+        return array;
+    }
+    public static double[] generateArray(int n)
+    {
+      double[] array = new double[n];
+       Random r = new Random();
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=r.nextInt(20);
+        }
+        return array;
+    }
+    
+    public static void main(String[] args) {
+        double[] array1 = generateArray(10);
+        double[] sqrt = new double[array1.length];
+        double ave = 0;
+        double sum = 0;
+      
+        for(int i=0; i<array1.length; i++)
+        {
+          sqrt[i] = Math.sqrt(array1[i]);
+          
+        }
+          
+        if (array1.length > 0)
+        {
+         for (int j = 1; j < 3; j++) 
+         {
+         sum += array1[j];
+          
+        ave = sum / 2;
+        }
+        }
+        int i = 3;
+        
+        printArray(array1);
+        System.out.println("For array1[3] sqrt = " + sqrt[i] + ", average for numbers 1 and 2 = " + ave);
+        
+        }
+}
+//Task 4
+Дан массив. Все его элементы:
+1 увеличить в 2 раза
+2 уменьшить на число А
+3 разделить на первый элемент.
+import java.util.Scanner;
+import java.util.Random;
+
+public class HelloWorld {
+    public static void printArray(double[] array){
+      for(int i = 0; i < array.length; i++)
+        {
+          System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+    public static double[] scanArray(int n)
+    {
+      double[] array = new double[n];
+       Scanner sc = new Scanner(System.in);
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=sc.nextInt();
+        }
+        return array;
+    }
+    public static double[] generateArray(int n)
+    {
+      double[] array = new double[n];
+       Random r = new Random();
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=r.nextInt(20);
+        }
+        return array;
+    }
+    public static double[] multiplyArray(double[] array, int n)
+    {
+      for(int i=0; i<array.length; i++)
+        {
+           array[i] = array[i]*n;
+        }
+          return array;
+    }
+    public static double[] decreaseArray(double[] array, int n)
+    {
+      for(int i=0; i<array.length; i++)
+        {
+           array[i] = array[i]-n;
+        }
+          return array;
+    }
+   
+    
+    public static void main(String[] args) {
+        double[] array1 = generateArray(10);
+        printArray(array1);
+        multiplyArray(array1,3);
+        printArray(array1);
+        decreaseArray(array1,5);
+        printArray(array1);
+   
+        for(int i=0; i<array1.length; i++)
+        {
+           if(array1[i]>array1[0])
+           {
+           array1[i] = array1[i]/array1[0];
+           }
+          
+        System.out.print(array1[i] + " ");
+        }
+       
+        
+    }
+}
+// Task5
+Дан массив. Напечатать:
+1 все неотрицательные элементы
+2 все элементы, не превышающие число 100
+import java.util.Scanner;
+import java.util.Random;
+
+public class HelloWorld {
+    public static void printArray(double[] array){
+      for(int i = 0; i < array.length; i++)
+        {
+          if((i>=0)&&(i<100))
+          {
+          System.out.print(array[i] + " ");}
+        }
+        System.out.println();
+    }
+    public static double[] scanArray(int n)
+    {
+      double[] array = new double[n];
+       Scanner sc = new Scanner(System.in);
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=sc.nextInt();
+        }
+        return array;
+    }
+    public static double[] generateArray(int n)
+    {
+      double[] array = new double[n];
+       Random r = new Random();
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=r.nextInt(20);
+        }
+        return array;
+    }
+    
+    public static void main(String[] args) {
+        double[] array1 = generateArray(10);
+        printArray(array1);
+    }
+}
+//Task 6
+Дан массив. Определить:
+1 максимальный элемент
+2 минимальный элемент
+3 на сколько максимальный элемент больше минимального
+4 индекс максимального элемента
+5 индекс минимального элемента
+import java.util.Scanner;
+import java.util.Random;
+
+public class HelloWorld {
+    public static void printArray(int[] array){
+      for(int i = 0; i < array.length; i++)
+        {
+          System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+    public static int[] scanArray(int n)
+    {
+      int[] array = new int[n];
+       Scanner sc = new Scanner(System.in);
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=sc.nextInt();
+        }
+        return array;
+    }
+    public static int[] generateArray(int n)
+    {
+      int[] array = new int[n];
+       Random r = new Random();
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=r.nextInt(20);
+        }
+        return array;
+    }
+    public static int[] multiplyArray(int[] array, int n)
+    {
+      for(int i=0; i<array.length; i++)
+        {
+           array[i] = array[i]*n;
+        }
+          return array;
+    }
+    public static int[] decreaseArray(int[] array, int n)
+    {
+      for(int i=0; i<array.length; i++)
+        {
+           array[i] = array[i]-n;
+        }
+          return array;
+    }
+   public static int findMaxElementOfArray(int[] array)
+   {
+     int max = array [0];
+     for(int i=0; i<array.length; i++)
+     {
+       if(array[i]>max)
+       {
+         max=array[i];
+       }
+       
+     }
+     return max;
+   }
+   public static int findMinElementofArray(int[] array)
+   {
+     int min = array[0];
+     for(int j = 0; j<array.length; j++)
+     {
+       if(array[j]<min)
+       {
+         min = array[j];
+       }
+     }
+     return min;
+   }
+    public static int findIndexofMaxElementofArray(int[] array)
+    {
+      int index = -1;
+      int max = findMaxElementOfArray(array);
+      for(int i = 0; i<array.length; i++)
+      {
+        if(array[i]==max)
+        {
+          index = i;
+          break;
+        }
+      }
+      return index;
+    }
+    public static int findIndexofMinElementofArray(int[] array)
+    {
+      int index = -1;
+      int min = findMinElementofArray(array);
+      for(int i = 0; i<array.length; i++)
+      {
+        if(array[i]==min)
+        {
+          index = i;
+          break;
+        }
+      }
+      return index;
+    }
+    public static void main(String[] args) {
+        int[] array1 = generateArray(10);
+        printArray(array1);
+        multiplyArray(array1,3);
+        printArray(array1);
+        decreaseArray(array1,5);
+        printArray(array1);
+        int MaxMin = findMaxElementOfArray(array1) - findMinElementofArray(array1);
+      System.out.println("Max = " + findMaxElementOfArray(array1));
+      System.out.println("Min = " + findMinElementofArray(array1));
+      System.out.println("Max-Min= " + MaxMin);
+      System.out.println("IndexMax = " + findIndexofMaxElementofArray(array1));
+      System.out.println("IndexMin = " + findIndexofMinElementofArray(array1));
+  }
+}
+//Task 7
+Дан массив. Поменять местами:
+1 второй и пятый элементы;
+2 третий и максимальный элементы. Если элементов с максимальным значением
+несколько, то в обмене должен участвовать первый из них.
+import java.util.Scanner;
+import java.util.Random;
+
+public class HelloWorld {
+    public static void printArray(int[] array){
+      for(int i = 0; i < array.length; i++)
+        {
+          System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+    public static int[] scanArray(int n)
+    {
+      int[] array = new int[n];
+       Scanner sc = new Scanner(System.in);
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=sc.nextInt();
+        }
+        return array;
+    }
+    public static int[] generateArray(int n)
+    {
+      int[] array = new int[n];
+       Random r = new Random();
+          for(int i=0; i< array.length; i++)
+        {
+          array[i]=r.nextInt(20);
+        }
+        return array;
+    }
+    public static int[] multiplyArray(int[] array, int n)
+    {
+      for(int i=0; i<array.length; i++)
+        {
+           array[i] = array[i]*n;
+        }
+          return array;
+    }
+    public static int[] decreaseArray(int[] array, int n)
+    {
+      for(int i=0; i<array.length; i++)
+        {
+           array[i] = array[i]-n;
+        }
+          return array;
+    }
+   public static int findMaxElementOfArray(int[] array)
+   {
+     int max = array [0];
+     for(int i=0; i<array.length; i++)
+     {
+       if(array[i]>max)
+       {
+         max=array[i];
+       }
+       
+     }
+     return max;
+   }
+   public static int findMinElementofArray(int[] array)
+   {
+     int min = array[0];
+     for(int j = 0; j<array.length; j++)
+     {
+       if(array[j]<min)
+       {
+         min = array[j];
+       }
+     }
+     return min;
+   }
+    public static int findIndexofMaxElementofArray(int[] array)
+    {
+      int index = -1;
+      int max = findMaxElementOfArray(array);
+      for(int i = 0; i<array.length; i++)
+      {
+        if(array[i]==max)
+        {
+          index = i;
+          break;
+        }
+      }
+      return index;
+    }
+    public static int findIndexofMinElementofArray(int[] array)
+    {
+      int index = -1;
+      int min = findMinElementofArray(array);
+      for(int i = 0; i<array.length; i++)
+      {
+        if(array[i]==min)
+        {
+          index = i;
+          break;
+        }
+      }
+      return index;
+    }
+    public static int[] swapElementsOfArray(int[] array, int idx1, int idx2)
+    {
+      if((idx1>=0)&&(idx2>=0)&&(idx1<array.length)&&(idx2<array.length))
+      {
+        int temp=array[idx1];
+        array[idx1]=array[idx2];
+        array[idx2]=temp;
+        return array;
+      }
+      else
+      {
+        return array;
+      }
+    }
+    public static void main(String[] args) {
+        int[] array1 = generateArray(10);
+        printArray(array1);
+        multiplyArray(array1,3);
+        printArray(array1);
+        decreaseArray(array1,5);
+        printArray(array1);
+        int MaxMin = findMaxElementOfArray(array1) - findMinElementofArray(array1);
+      System.out.println("Max = " + findMaxElementOfArray(array1));
+      System.out.println("Min = " + findMinElementofArray(array1));
+      System.out.println("Max-Min= " + MaxMin);
+      System.out.println("IndexMax = " + findIndexofMaxElementofArray(array1));
+      System.out.println("IndexMin = " + findIndexofMinElementofArray(array1));
+      swapElementsOfArray(array1, 1, 4);
+      printArray(array1);
+      
+	swapElementsOfArray(array1, 2, findIndexofMaxElementofArray(array1));
+      printArray(array1);
+      
+  }
+}
+// Task 11
+Дан двумерный массив.
+1 поменять местами первую и третью строки
+2 поменять местами второй и последний столбцы
+import java.util.Random;
+
+public class HelloWorld {
+  public static int[][] generateArray(int n, int m)
+  {
+    int[][]array=new int[n][m];
+    Random r=new Random();
+  for(int i=0; i<array.length; i++)
+  {
+    for(int j=0; j<array[i].length; j++)
+    {
+      array[i][j]=r.nextInt(50);
+    }
+    
+  }
+  return array;
+  }
+  
+  public static void printArray(int[][] array)
+  {
+    for(int i=0; i<array.length; i++)
+  {
+    for(int j=0; j<array[i].length; j++)
+    {
+      System.out.print(array[i][j] + " ");
+    }
+    System.out.println();
+  }
+  }
+  public static int[][] swapLinesOfArray(int[][] array, int idx1, int idx2)
+  {
+    int[]temp = new int[array[idx1].length];
+    for(int i=0; i<array[idx1].length; i++)
+    {
+      temp[i]=array[idx1][i];
+    }
+    array[idx1]=array[idx2];
+    array[idx2]=temp;
+    return array;
+  }
+  
+    private static void swapColumns(int[][] array, int first, int second) {
+    //меняем элементы в каждой строке
+    for(int i=0; i<array.length; i++) {
+         int temp = array[i][first];
+         array[i][first] = array[i][second];
+         array[i][second] = temp;
+    }
+    
+}
+  
+   public static void main(String []args){
+      
+        int[][] array1 = generateArray(5,7);
+        printArray(array1);
+        
+        System.out.println();
+        
+        swapLinesOfArray(array1, 1, 3);
+        printArray(array1);
+        
+        System.out.println();
+        
+        swapColumns(array1, 1, 2);
+        printArray(array1);
+    }
+  
+}
+//
+
